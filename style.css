@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #222f56;
+    --secondary-color: #052995;
+}
+
+body {
+    background-color: var(--primary-color) !important;
+}
+
+.movies {
+    background-color: var(--secondary-color) !important;
+    position: relative;
+    height: 850px;
+}
+
+img {
+    width: 100%;
+}
+
+#main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.movie_content_box {
+    padding: 10px;
+}
+
+.movie_content_box h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.movie_content_box p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+span p {
+    width: 50px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 8px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+}
+
+.red {
+    background-color: red;
+}
+.seats-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+.seats {
+    display: flex;
+    flex-direction: column;
+}
+  
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.seat {
+    height: 100px;
+    width: 100px;
+    background-color: #bdc3c7;
+    border-radius: 4px;
+    margin: 10px;
+    cursor: pointer;
+    text-align: justify;
+    font-size: larger;
+}
+  
+.seat.selected {
+    background-color: #62b6ee;
+}
+  
+.seat.sold {
+    cursor: not-allowed;
+}  
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#checkout-btn{
+    height: 50px;
+    width: 95px;
+    background-color: #bdc3c7;
+    border-radius: 4px;
+}
+
+.checkout-container {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+.text{
+    color: #bdc3c7;
+    margin: auto;
+    margin-top: 200px;
+}
+p.text span {
+    color: #6feaf6;
+  }
